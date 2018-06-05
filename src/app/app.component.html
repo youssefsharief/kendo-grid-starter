@@ -1,0 +1,7 @@
+<kendo-grid [kendoGridSelectBy]="rowsSelectedKeys" [selectedKeys]="selectedRows" [data]="data" [filter]="state.filter" [selectable]="{checkboxOnly: true}"
+    (dataStateChange)="dataStateChange($event)" [sortable]="{mode: 'single'}" [sort]="sort" (sortChange)="sortChange($event)">
+    <kendo-grid-checkbox-column showSelectAll="true"></kendo-grid-checkbox-column>
+    <kendo-grid-column field="name" title="Name" width="250"></kendo-grid-column>
+    <kendo-grid-column field="description" title="Description" width="250"></kendo-grid-column>
+    <kendo-grid-column field="tenantName" title="Tenant Name" width="200"></kendo-grid-column>
+</kendo-grid>
